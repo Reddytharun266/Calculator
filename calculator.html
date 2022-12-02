@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="witdh=device-width, initial-scale=1">
+	<title>Online Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script src="calculator.js"></script>
+</head>
+<body>
+	<div align="center">  
+        <h1>Calculator</h1>  
+    </div> 
+    <table border="5" align="center" cellpadding="30" cellspacing="30" bgcolor="lightgray">  
+		<tr><td>
+			<input type="text" id="display" placeholder="0">
+	</td></tr>
+	<tr><td>
+		<input type="button" class="button" value="(" style="font-size:30px" onclick="display('(')">
+		<input type="button" class="button" value=")" style="font-size:30px" onclick="display(')')">
+		<input type="button" class="button" value="C" style="font-size:30px" onclick="clear_screen()">
+		<input type="button" class="button" value="&#8592" style="font-size:30px" onclick="backspace()">
+		<br>
+		<input type="button" class="button" value="9" style="font-size:30px" onclick="display('9')">
+		<input type="button" class="button" value="8" style="font-size:30px" onclick="display('8')">
+		<input type="button" class="button" value="7" style="font-size:30px" onclick="display('7')">
+		<input type="button" class="button" value="/" style="font-size:30px" onclick="display('/')">
+		<br>
+		<input type="button" class="button" value="4" style="font-size:30px" onclick="display('4')">
+		<input type="button" class="button" value="5" style="font-size:30px" onclick="display('5')">
+		<input type="button" class="button" value="6" style="font-size:30px" onclick="display('6')">
+		<input type="button" class="button" value="x" style="font-size:30px" onclick="display('*')">
+		<br>
+		<input type="button" class="button" value="1" style="font-size:30px" onclick="display('1')">
+		<input type="button" class="button" value="2" style="font-size:30px" onclick="display('2')">
+		<input type="button" class="button" value="3" style="font-size:30px" onclick="display('3')">
+		<input type="button" class="button" value="-" style="font-size:30px" onclick="display('-')">
+		<br>
+		<input type="button" class="button" value="0" style="font-size:30px" onclick="display('0')">
+		<input type="button" class="button" value="." style="font-size:30px" onclick="display('.')">
+		<input type="button" class="button" value="=" style="font-size:30px" onclick="calculate()">
+		<input type="button" class="button" value="+" style="font-size:30px" onclick="display('+')">
+		<br>
+
+	</td></tr>
+</table>
+</body>
+</html>
